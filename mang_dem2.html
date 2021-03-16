@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Arguments Array</title>
+</head>
+<body>
+<form>
+    <p id="1" value=""></p>
+</form>
+<script>
+let  total=0;
+let tb;
+    var newarray = [];
+    for (let i = 0 ;i <= 15;i++){
+         newarray.push(i)
+    }
+    for (let a=0; a< newarray.length; a++){
+        total += newarray[a]
+    }
+    let maxInNumbers = Math.max.apply(Math, newarray);
+    tb = total / 15;
+    document.getElementById("1").innerHTML = " tổng điểm trung bình = " + tb
+    console.log(maxInNumbers)
+</script> </body> </html>
