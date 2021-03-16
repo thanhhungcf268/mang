@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Arguments Array</title>
+</head>
+<body>
+<script>
+
+    var newarray = [];
+    for (let i = 0 ;i <= 15;i++){
+         newarray.push(i)
+    }
+    var maxInNumbers = Math.max.apply(Math, newarray);
+    a = newarray.indexOf(maxInNumbers)
+    document.write(maxInNumbers)
+    console.log(a)
+</script> </body> </html>
