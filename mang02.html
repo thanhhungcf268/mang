@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form>
+<button type="button" onclick="duyet()" name="tiếng việt">Tiếng anh</button>
+</form>
+<form>
+    <p id="1"></p>
+    <p id="2"></p>
+</form>
+</body>
+</html>
+<script>
+    let newarray = ["xin chào","đồng ý","Tên"]
+    let array    = ["hello","yes","name"]
+    function duyet() {
+        let x = prompt("Nhập từ =")
+        let k = array.indexOf(x)
+        if (k <= array.length && k >= 0){
+            document.getElementById("1").innerHTML = array[k]
+            document.getElementById("2").innerHTML = newarray[k]
+        }else {
+            alert("từ đó không tồn tại")
+        }
+    }
+
+</script>
