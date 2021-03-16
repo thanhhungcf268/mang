@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Arguments Array</title>
+</head>
+<body>
+<script>
+let  total=0;
+let tb;
+let a
+var newarray = [];
+    for (let i = 0 ;i <= 10;i++){
+       a  = prompt("nhập")
+        newarray[i] = a;
+    }
+    for (k=0 ;k< newarray.length;k++){
+        if (newarray[k]<0){
+            total++
+        }
+    }document.write("số lượng số nguyên âm = " + total)
+document.write("</br>")
+    document.write(newarray)
+</script> </body> </html>
