@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table  cellspacing="0px">
+<tr> <td><a style="margin-left: 55px">Feed</a><br></td>
+    <td><a style="margin-left: 55px" >Meter</a></td>
+    <td><a style="margin-left: 55px">Meter</a><br></td>
+    <td><a style="margin-left: 55px">Feed</a></td>
+</tr>
+    <tr>
+        <td  style="border: 1px solid black"></td>
+        <td  style="border: 1px solid black"></td>
+        <td  style="border: 1px solid black"></td>
+        <td  style="border: 1px solid black"></td>
+
+    </tr>
+<tr>
+    <td><input id="1" onkeydown="chuyen()" ></td>
+    <td style="text-align: center;width: 150px"><p id="2"></p></td>
+    <td><input id="3" onkeydown="uc()" ></td>
+    <td style="text-align: center;width: 150px"><p id="4"></p></td>
+</tr>
+</table>
+</body>
+</html>
+<script>
+    function chuyen() {
+        let a=document.getElementById("1").value;
+        b = 0.305 * a
+        document.getElementById("2").innerHTML = b;
+    }
+    function uc() {
+        let a=document.getElementById("3").value;
+        b = 3.279 * a
+        document.getElementById("4").innerHTML = b;
+
+    }
+</script>
