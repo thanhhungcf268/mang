@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let e = 0;
+    let b;
+    let c = isPrime()
+    function isPrime(){
+        var a = prompt("Nhập số cần kiểm tra")
+        for (i = 2;i < a;i ++){
+           b = a%i
+            if (b===0){
+                e++;
+                break;
+            }
+        }
+    }
+    if (e ===0){
+        document.write( a +"số này là số nguyên tố")
+    }else {
+        document.write( a + "số này không pải số nguyên tố ")
+    }
+</script>
+</body>
+</html>
